@@ -5,15 +5,15 @@ Unfortunately, LAX does not have enough runways or boarding gates to allow all o
 The problem facing the air traffic controllers is to assign each plane in the air a time when it should begin its landing procedure and a time when it should begin its takeoff procedure. Each plane must have enough fuel to stay in the air until its assigned landing time, a gate to stay at before its time to take off again, and an early enough take off time so that its waiting passengers do not complain.<br /><br />
 
 <b>Input Format</b><br/><br/>
-The input file name is “input.txt”.<br/>
-<b><AIRPORT INFORMATION></b>: ​contains 3 integers, ​L G T​, separated by spaces. The first is the maximum number of planes that can be landing at the same time. The second is the number of
- boarding gates in the airport, each capable of serving only a single plane. The third is the maximum number of planes that can be taking off at the same time.<br/>
- <b><NUMBER OF PLANES></b>: ​contains one integer ​N specifying the number of planes. The next ​N lines will provide the information about each of the planes currently hovering over the airport.<br/> 
-  <b><PLANE 1></b>: ​contains 5 positive integers, ​R M S O C​, separated by spaces. ​R is the maximum number of minutes that this plane can keep hovering based on its remaining fuel. ​M is the number of minutes it takes the plane to reach its gate after initiating its landing. ​S is the number of minutes it takes the gate crew to serve the plane (unload passengers, refuel, board new passengers, etc.). ​O is the number of minutes it takes the plane to complete takeoff after leaving the gate. ​C is the maximum number of minutes that a plane can stay at the gate before passengers start complaining.<br/>
-  <b><PLANE 2></b>: ​Same format as Plane 1.<br/> 
+The input file name is “input.txt”.<br />
+<b><​AIRPORT INFORMATION></b>
+: contains 3 integers, ​L G T​, separated by spaces. The first is the maximum number of planes that can be landing at the same time. The second is the number of boarding gates in the airport, each capable of serving only a single plane. The third is the maximum number of planes that can be taking off at the same time.<br/>
+ <b><​NUMBER OF PLANES></b>: ​contains one integer ​N specifying the number of planes. The next ​N lines will provide the information about each of the planes currently hovering over the airport.<br/> 
+  <b><​PLANE 1></b>: ​contains 5 positive integers, ​R M S O C​, separated by spaces. ​R is the maximum number of minutes that this plane can keep hovering based on its remaining fuel. ​M is the number of minutes it takes the plane to reach its gate after initiating its landing. ​S is the number of minutes it takes the gate crew to serve the plane (unload passengers, refuel, board new passengers, etc.). ​O is the number of minutes it takes the plane to complete takeoff after leaving the gate. ​C is the maximum number of minutes that a plane can stay at the gate before passengers start complaining.<br/>
+  <b><​PLANE 2></b>: ​Same format as Plane 1.<br/> 
 ......<br/>
-   <b><PLANE N></b>: ​Same format as Plane 1.<br/><br/>
-    <b>Sample Input file:</b><br />
+  <b><​PLANE N></b>: ​Same format as Plane 1.<br/><br/>
+  <b>Sample Input file:</b><br />
 1 2 1<br />
 4<br />
 0 10 50 20 70<br />
@@ -25,11 +25,11 @@ This input sample tells us: There can be at most 1 plane landing at a time, 2 pl
 <b>Output Format</b><br />
 
 Your program must output an output file “output.txt”. You need to print out ​N lines containing the assigned landing and takeoff times (in minutes) for each plane. The problem starts at time 0.<br />
-<b><ARRANGEMENT PLANE 1></b>: ​Each line contains 2 integers, ​A B​, separated by a space. ​A is the time (number of minutes from the start) that you have granted this plane to begin landing. ​B is the time (number of minutes from the start) that you have granted this plane to leave the gate and this plane start to take off.<br /><br />
+<b><​ARRANGEMENT PLANE 1></b>: ​Each line contains 2 integers, ​A B​, separated by a space. ​A is the time (number of minutes from the start) that you have granted this plane to begin landing. ​B is the time (number of minutes from the start) that you have granted this plane to leave the gate and this plane start to take off.<br /><br />
 
-<b><ARRANGEMENT PLANE 2></b>: ​Same as the format for Plane 1.<br /> 
+<b><​ARRANGEMENT PLANE 2></b>: ​Same as the format for Plane 1.<br /> 
 ......<br />
- <b><ARRANGEMENT PLANE N></b>: ​Same as the format for Plane 1.<br /><br />
+<b><​ARRANGEMENT PLANE N></b>: ​Same as the format for Plane 1.<br /><br />
 
 <b>Sample Output file:</b><br />
 0 60<br /> 
